@@ -6,7 +6,6 @@ Tensorflow implementation of *Enabling Viewpoint Learning through Dynamic Label 
 [P. Hermosilla](https://www.uni-ulm.de/in/mi/institut/mitarbeiter/pedro-hermosilla-casajus/), 
 [P.-P. Vázquez](https://www.cs.upc.edu/~ppau/index.html)
 and [T. Ropinski](https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinski/)
-![Teaser](https://raw.githubusercontent.com/onc/BlueNoisePlots/main/images/Teaser.png)
 
 [Paper Pre-Print](https://arxiv.org/abs/2003.04651) 
 
