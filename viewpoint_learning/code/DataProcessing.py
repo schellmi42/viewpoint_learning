@@ -25,7 +25,6 @@ sys.path.append('../../code/helpers')
 sys.path.append('../../code')
 
 from VQs import *
-#from Application import GLScene
 from MeshHelpers2 import *
 #from MCConvBuilder import PointHierarchy
 
@@ -192,14 +191,13 @@ def generate_views(DATA_DIR, objfolder, dimension = '3D', resolution=1024, rever
     #   recalc: bool - if True existing results will be overwritter
     #   n_points: int - number of points to be sampled
     
+    from Application import GLScene
     print('--Generating View Quality Meshes---')
     param_dir = DATA_DIR + 'param/'
     mkdir('best_views')
     # input direction with .obj files for image rendering
     input_dir = DATA_DIR + objfolder + '/'
-    
-    link_table = load_table('Pascal3D+')
-    
+
     # get .obj files
     # all files from the directory
     fileList_1, folderList = list_files(input_dir)
@@ -209,13 +207,7 @@ def generate_views(DATA_DIR, objfolder, dimension = '3D', resolution=1024, rever
     # only files with a limited number of faces (stored in small.txt
     with open('small.txt','r') as myFile:
         for line in myFile:
-            fileList_1.append(line[9:-1])
-            
-    # only files with a certain category
-    for i,f in enumerate(fileList_1):
-        curr_cat = f.split('/')[0]
-        if curr_cat in link_table:
-            fileList.append(f)
+            fileList.append(line[9:-1])
         
     if reverse:
         fileList = fileList[::-1]
@@ -886,6 +878,7 @@ def generate_images(DATA_DIR, objfolder = 'objfiles', resolution = 1024, VQs = [
     #   resolution: int - images will be with with resolution x resolution pixels
     #   VQs: list of strings - View quality measures to use.
     
+    from Application import GLScene
     print('--Generating Images---')
     #Render
     MyGL = GLScene(resolution, resolution)

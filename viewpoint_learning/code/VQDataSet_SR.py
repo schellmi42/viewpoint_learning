@@ -1,3 +1,11 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    \brief Code with dataset for SR learning
+
+    \copyright Copyright (c) 2021 Visual Computing group of Ulm University,  
+                Germany. See the LICENSE file at the top-level directory of 
+                this distribution.
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 # import important functions
 import sys, copy,os, math, h5py
 import numpy as np

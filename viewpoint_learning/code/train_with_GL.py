@@ -1,13 +1,10 @@
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    \file ModelNet.py
 
-    \brief Code to train a classification network on the ModelNet40 dataset.
+    \brief Code to train viewpoint prediction using GL
 
-    \copyright Copyright (c) 2018 Visual Computing group of Ulm University,  
+    \copyright Copyright (c) 2021 Visual Computing group of Ulm University,  
                 Germany. See the LICENSE file at the top-level directory of 
                 this distribution.
-
-    \author pedro hermosilla (pedro-1.hermosilla-casajus@uni-ulm.de)
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 import sys

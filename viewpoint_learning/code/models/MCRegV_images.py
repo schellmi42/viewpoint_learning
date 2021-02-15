@@ -1,14 +1,11 @@
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     \file MCClass.py
 
-    \brief Definition of the network architecture MCClass for classification 
-           tasks.
+    \brief Definition of the network architecture for DLDL learning
 
-    \copyright Copyright (c) 2018 Visual Computing group of Ulm University,  
+    \copyright Copyright (c) 2021 Visual Computing group of Ulm University,  
                 Germany. See the LICENSE file at the top-level directory of 
                 this distribution.
-
-    \author pedro hermosilla (pedro-1.hermosilla-casajus@uni-ulm.de)
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 import sys

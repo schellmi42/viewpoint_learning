@@ -1,3 +1,11 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    \brief Code with functions to compute view qualities
+
+    \copyright Copyright (c) 2021 Visual Computing group of Ulm University,  
+                Germany. See the LICENSE file at the top-level directory of 
+                this distribution.
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 # Measure calculation for viewpoint quality
 import numpy as np
 import tensorflow as tf
@@ -207,27 +215,5 @@ def vq8(a_z, a_t, p_z):
     #v = tf.sum(tf.multiply(p_zv,np.log2(div)))
     return v
 
-### VQ_12 Silhoutte Curvature ###
-def vq12(angles, counts):
-    """ angles: nx1 turning angles between consecutive pixels (range from -1 to +1 in 0.5 steps)
-        counts: nx1 number of times the angles occured
-    """
-    v = np.sum(angles*np.absolute(unique))
-    #N_c = c.shape[0]
-    #v = sum(np.abs(c))*np.pi*N_c/2    
-    #N_c = tf.shape(c)[0]
-    #v = tf.sum(tf.abs(c))*np.pi*N_c/2
-    return v
-
-
-### VQ_14 Stoev and Strassler ###
-def vq14(p, d, weights):
-    """ p: float, normalized projection area
-        d: float, normalized maximum depth
-        weights: nx3, weighting parameters [alpha, beta, gamma]
-    """
-    
-    v = weights[0] * p + weights[1] * d + weights[2] * (abs(d - p))
-    return v
 
 
