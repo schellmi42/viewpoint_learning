@@ -16,7 +16,7 @@ and [T. Ropinski](https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinsk
 ## Prerequisites
 
 - Download and compile the [MCCNN](https://github.com/viscom-ulm/MCCNN) library and place it it the `MCCNN/` folder.
-- Download the data and place it in the `viewpoint_learning/data/` folder
+- Download the [data](https://cloudstore.uni-ulm.de/s/NmDS4QmGtkJmGWR) and place it in the `viewpoint_learning/data/` folder
 
 This Implementation is in TensorFlow 1 and was tested using TF 1.11 and Python 2.7.
 For the viewpoint computation methods the OpenGL package for python is required. For training this is not necessary.
