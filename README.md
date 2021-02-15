@@ -7,6 +7,8 @@ Tensorflow implementation of *Enabling Viewpoint Learning through Dynamic Label 
 [P.-P. Vázquez](https://www.cs.upc.edu/~ppau/index.html)
 and [T. Ropinski](https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinski/)
 
+![Teaser](https://raw.githubusercontent.com/schellmi42/viewpoint_learning/main/images/Teaser3.png)
+
 [Paper Pre-Print](https://arxiv.org/abs/2003.04651) 
 
 [Project Page](https://www.uni-ulm.de/in/mi/mi-forschung/viscom/publikationen?category=publication&publication_id=183)
