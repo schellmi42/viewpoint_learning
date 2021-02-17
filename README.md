@@ -16,7 +16,7 @@ and [T. Ropinski](https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinsk
 ## Prerequisites
 
 - Download and compile the [MCCNN](https://github.com/viscom-ulm/MCCNN) library and place it it the `MCCNN/` folder.
-- Download the [data](https://cloudstore.uni-ulm.de/s/NmDS4QmGtkJmGWR) and place it in the `viewpoint_learning/data/` folder
+- Download the [data](https://viscom.datasets.uni-ulm.de/viewpoint_learning_dataset/viewpoint_learning_data.zip) and place it in the `viewpoint_learning/data/` folder
 
 This Implementation is in TensorFlow 1 and was tested using TF 1.11 and Python 2.7.
 For the viewpoint computation methods the OpenGL package for python is required. For training this is not necessary.
@@ -25,7 +25,7 @@ We recommend to run training in a `tf=1.11_gpu` docker container.
 ## Example Training
 The root directory contains scripts to train viewpoint prediction networks using dynamic label generation with Multiple Labels (*ML*), Gaussian Labels (*GL*) and a two staged learning using both (*ML-GL*).
 
-Reference implenentation are given for Single Label (*SL*), Spherical Regression (*SR*), Deep Label Distribution Learning (*DLDL*).
+Reference implementation are given for Single Label (*SL*), Spherical Regression (*SR*), Deep Label Distribution Learning (*DLDL*).
 
 Note: By default this only trains the *airplane* category, to train other categories in parallel on multiple GPUs please uncomment the respective lines in the `script_*.sh` files.
 
